@@ -1,0 +1,123 @@
+Package: com.ex.libsubstitute
+Version: 0.0.8
+Architecture: iphoneos-arm
+Maintainer: Yangcheesen
+Depends: firmware (>= 8.0), cy+cpu.arm64
+Filename: debs/com.ex.substitute_0.0.7-coolstar_iphoneos-arm.deb
+Size: 18780
+MD5sum: 02879326affd7848907fd0bc44b7a999
+SHA1: 03cf02d6ada8096e56ac4cb76a0f60ac83848ed1
+SHA256: 55d98f370fcaf3dc375a73ba8f25b54e684476ffe63e9bf32a6ffa1d0b776202
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution (library only)
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: cydia-gui
+Version: 1.1.31
+Architecture: iphoneos-arm
+Maintainer: Yangcheeseb
+Depends: cy+cpu.arm64
+Replaces: cydia
+Filename: ./debs/cydia-gui_1.1.31_iphoneos-arm.deb
+Size: 1064908
+MD5sum: 093dcaeb673d03ec5d12a98362ab50f0
+SHA1: 965ee199a05d489f902e1ee631849882f4d5e596
+SHA256: 8ba12466876a0af23a13a3dbb7124092d0e82cfabcacd3ffc2da6b4d25c727b7
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Saurik & CoolStar & Yangcheesen & Zlab Team
+Depiction: https://yangcheesenios.github.io/cydia.html
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia (GUI Only)
+
+Package: cydia-lproj
+Version: 1.1.12
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 712
+Depends: cydia
+Conflicts: org.thebigboss.russiancydia
+Replaces: cydia, org.thebigboss.russiancydia
+Provides: org.thebigboss.russiancydia
+Filename: debs/cydia-lproj.deb
+Size: 66876
+MD5sum: 50df4fbd8f163f553a5ba6e4e8fcad15
+SHA1: e3cf092b6e54261f59c7bcbf483d60479a9f86e4
+SHA256: be77311b214122e5ff7dabd001c96b8cd8a4e479362f3163a557d8dd9b520f31
+Section: Packaging
+Priority: required
+Description: languages and translations for Cydia
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia-lproj/
+Name: Cydia Translations
+
+Package: cydia-upgrade
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: Yangcheesen
+Depends: cy+cpu.arm64
+Filename: debs/cydia-upgrade_1.2_iphoneos-arm.deb
+Size: 1245946
+MD5sum: 3a82e20eaca6cd40721e93912dbda6a5
+SHA1: 1a2dc46f2f44087969b975c61b874c23dcbfc64f
+SHA256: 0dde93b73a6145dd35601c37f86437f82b2e92eb9500bbb537c3fdc6be02b45c
+Section: Packaging
+Description: Cydia is unable to install this update, so use a component of Sileo that can
+Tag: purpose::uikit,  role::enduser
+Author: Yangcheesen>
+Name: Cydia Update
+
+Package: mobilesubstrate
+Version: 99.1
+Architecture: iphoneos-arm
+Maintainer: Yangcheeesen
+Depends: org.coolstar.tweakinject, com.ex.libsubstitute, cy+cpu.arm64
+Filename: debs/mobilesubstrate_99.1_iphoneos-arm.deb
+Size: 2724
+MD5sum: b67f719a89a2cac3f21b7aa9c911550c
+SHA1: d933e7ebab5b30126a4dcbc0b7ff098d6ad83b91
+SHA256: 1e70a9b3235c6e9ca64a22be90565fae3c1138ac7e0dfbc7fd9e802d519f7244
+Section: System
+Description: Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute
+Author: Yangcheesen
+Name: Substrate Compatibility Layer
+
+Package: org.coolstar.tweakinject
+Version: 1.0.8
+Architecture: iphoneos-arm
+Maintainer: Yangcheesen
+Depends: firmware (>= 10.0), cy+cpu.arm64, com.ex.libsubstitute
+Filename: debs/org.coolstar.tweakinject_1.0.8_iphoneos-arm.deb
+Size: 24146
+MD5sum: 7afb9d025cc860b6eb54a79fba643109
+SHA1: bf90e9635b16ff1f18d51e8712372f6c646b5648 
+SHA256: e144bf1d6695bb63a58b7bd166a30bb81ff65457180554da1c4fca005fb3ad52
+Section: System
+Description: General purpose tweak loader with safe mode in case of crashes
+Author: Yangcheesen
+Name: Tweak Injector
+
+Package: com.adesign.cystore
+Version: 0.1
+Architecture: iphoneos-arm
+Maintainer: A_Design and zLabs Team
+Depends: cy+cpu.arm64
+Replaces: cystore
+Filename: ./debs/com.adesign.cystore_0.1_iphoneos-arm.deb
+Size: 1064908
+MD5sum: 55012a433e00025253404490c07081dc
+SHA1: c0bb99431b13be9678a65445202c8f61b9f5f22d
+SHA256: 50f812cc95ce63c06201e11975157ea36c9e4e92431ac397ca5e3cab09f6f322
+Section: Packaging
+Priority: required
+Description: cystore
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: A_Design and zLabs Team
+Depiction: https://adesignios.github.io/cystore/index.html
+Icon: file:///Applications/Cydia.app/logo.PNG
+Name: CyStore
