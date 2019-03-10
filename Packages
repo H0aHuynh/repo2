@@ -121,3 +121,58 @@ Author: A_Design and zLabs Team
 Depiction: https://adesignios.github.io/cystore/index.html
 Icon: file:///Applications/Cydia.app/logo.PNG
 Name: CyStore
+
+Package: apt7-lib
+Version: 0.1
+Architecture: iphoneos-arm
+Maintainer: Coolstar
+Depends: cy+cpu.arm64
+Replaces: apt sileo
+Filename: ./debs/apt7-lib_1.7.2-sileo2_iphoneos-arm.deb
+MD5sum: a2cf1aa7db1d19b635c7e7eb084696a4
+SHA1: 897ba75168955f26371b4641c98ee7d5e64e5a16
+SHA256: 52fadba778945c1c18d0de0bf4a859d55f443686f15758a98b8b16e586173175
+Section: Packaging
+Priority: required
+Description: cystore
+Author: Coolstar
+Name: APT 1.7 Strict (lib)
+
+Package: org.coolstar.sileo
+Version: 1.7.2-sileo2
+Architecture: iphoneos-arm
+Maintainer: A_Design and zLabs Team
+Depends: cy+cpu.arm64
+Replaces: Sileo Beta
+Filename: ./debs/org.coolstar.sileo_0.8b4_iphoneos-arm.deb
+Size: 
+MD5sum: 6d7f3bdbfc386d76e6272aadf40bbfbc
+SHA1: 6a38ffc1449aff46cbffc71c46d0944fe05ef574
+SHA256: af46dc78882ca8550f132968d12b206f6a1531dc8e15b90bc126dca08a8c88b9
+Section: Packaging
+Priority: required
+Description: cystore
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: A_Design and zLabs Team
+Depiction: https://coolstar.moe/sileoassets/depictionoverride.php?package=org.coolstar.sileo
+sileodepiction: https://coolstar.moe/sileoassets/depictionoverride.php?package=org.coolstar.sileo
+Icon: file:///Applications/Sileo.app/AppIcon60x60@2x.png
+Name: Sileo Beta
+
+Package: com.adesign.uefsubstrate
+Version: 0.1
+Architecture: iphoneos-arm
+Maintainer: A_Design
+Depends: cy+cpu.arm64
+Replaces: cystore
+Filename: ./debs/com.adesign.cystore_0.1_iphoneos-arm.deb
+MD5sum: f9fbbae584ab58b8197592bc1ae6412a
+SHA1: ec7cb87f5a96136a17edd6625588589bb8be080c
+SHA256: df434462bc3b31fc29bd0b76e9627db464a6fa5b75083bc777e6e13e9d51b452
+Section: Packaging
+Priority: required
+Description:UEF Substrate for CySote
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: A_Design
+Depiction: https://adesignios.github.io/cystore/index.html
+Name: UEF Substrate
