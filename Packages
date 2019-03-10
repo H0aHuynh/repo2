@@ -123,7 +123,7 @@ Icon: file:///Applications/Cydia.app/logo.PNG
 Name: CyStore
 
 Package: apt7-lib
-Version: 0.1
+Version: 1.7.2
 Architecture: iphoneos-arm
 Maintainer: Coolstar
 Depends: cy+cpu.arm64
