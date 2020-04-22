@@ -1,60 +1,98 @@
 Package: org.coolstar.sileo
- Priority: required
- Section: Packaging
- Maintainer: CoolStar <coolstarorganization@gmail.com>
- Architecture: iphoneos-arm
- Version: 0.8b4
-Filename: debs/org.coolstar.sileo_0.8b4_iphoneos-arm.deb
- SileoDepiction: https://coolstar.moe/sileoassets/depictionoverride.php?package=org.coolstar.sileo
- Depends: org.coolstar.sileo, apt7 (>= 1.7.0), apt7-lib (>= 1.7.0-sileo), apt7-key (>= 1.7.0), dpkg (>= 1.19.2-4), cy+cpu.arm64
- Conflicts:
- Pre-Depends: debianutils, dpkg (>= 1.14.25-8)
- Description: A proper APT client for iOS 11 and higher. (View this package in Sileo to see the full depiction)
- Name: Sileo (Beta)
- Author: Sileo Team <getsileoapp@gmail.com>
- Tag: cydia::essential
-MD5sum: b6175048e5f2569480befeae680c09b6
+Version: 2.1.0a
+Architecture: iphoneos-arm
+Maintainer: CoolStar <coolstarorganization@gmail.com>
+Installed-Size: 11368
+Pre-Depends: debianutils, dpkg (>= 1.19)
+Depends: apt (>= 1.8.0), libapt (>= 1.8.2-4), libapt-pkg5.0 (>=1.8.2-4), apt-key (>= 1.8.0), dpkg (>= 1.19.2-4), zsh | bash, cy+cpu.arm64, firmware(>=12.2) | org.swift.libswift (>=5.0)
+Conflicts: cydia-gui (<<99.0)
+Filename: debs/org.coolstar.sileo_2.1.0a_iphoneos-arm.deb
+Size: 4373978
+MD5sum: 6892718c04754e57e4304c9deea79570
+SHA1: 66447966fbeffa84f968c34c76a8c3c174baaafc
+SHA256: f9ec8998137f18284675f2066abda05da6a3f3c4f8c394a21c5c6f1221bb860b
+Section: Packaging
+Priority: optional
+Description: An APT client for iOS 11 and higher. (View this package in Sileo to see the full depiction)
+Author: Sileo Team <getsileoapp@gmail.com>
+Name: Sileo
+Sileodepiction: https://coolstar.moe/sileoassets/depictionoverride.php?package=org.coolstar.sileo
 
-Package: com.adesign.uefsubstrate
- Version: 0.1
- Architecture: iphoneos-arm
- Description: UEF Substrate for CyStore
- Author: A_Design
- Depends: dpkg (>=1.19.2-4), cy+cpu.arm64
- Provides: mobilesubstrate (=0.9.7020)
- Conflicts: mobilesubstrate, com.ex.libsubstitute
- Replaces: mobilesubstrate, com.ex.libsubstitute
- Section: System
-Filename: debs/com.adesign.uefsubstrate_0.1_iphoneos-arm.deb
-Name: UEF Substrate
-MD5sum: f9fbbae584ab58b8197592bc1ae6412a
+Package: libapt
+Version: 1.8.2-4
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3624
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, dpkg (>= 1.14.25-9), gnupg, gzip, lz4, lzma, xz, libapt-pkg5.0 (>= 1.8.2), gnutls
+Conflicts: apt7-lib (<<1:0), apt7 (<<1:0), apt7-key (<<1:0), com.mc.xz
+Breaks: cydia (<< 1.1.10), aptitude (<< 0.4.11.11-6), apt7-lib (<< 1:0)
+Filename: debs.libapt_1.8.2-4_iphoneos-arm.deb
+Size: 304486
+MD5sum: cb6a2a0a9a06f99efd074486d297d7f0
+SHA1: 0113d3fecc41218b302cfe63a56e28122a9f2d94
+SHA256: 7a4f24344915528e6bcbdc3e263932cb0aecc51f675f744b671364f467fd818f
+Section: Packaging
+Priority: required
+Description: the advanced packaging library from Debian
+Name: APT (lib)
+Tag: purpose::library, role::developer
 
-Package: tweakinject
- Architecture: iphoneos-arm
- Name: Tweak Injector
- Description: General purpose tweak loader with safe mode in case of crashes
- Author: Yangcheesen
- Version: 2.0
-Filename: debs/tweakinject_2.0_iphoneos-arm.deb
- Maintainer: Yangcheesen
- Section: System
- Depends: firmware (>= 12.0), mobilesubstrate
-MD5sum: c598fe0b0ff2b2f47aa1ec9d5bcbd379
+Package: libapt-pkg5.0
+Version: 1.8.2-4
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3456
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, lz4, lzma, xz
+Conflicts: apt7-lib (<<1:0), com.mc.xz (<<5.2.4-7)
+Provides: libapt-pkg (=1.8.2)
+Filename: debs/libapt-pkg5.0_1.8.2-4_iphoneos-arm.deb
+Size: 536414
+MD5sum: dc1093dd07bf761884505e705fd41c70
+SHA1: 1ad1f03ea0865f55db5132d062fb90ecdb6cf6c3
+SHA256: 49c845737fa60c1b25fc2ff1fb1fdc5d53c9ee229259a2570b6c77eaaaa9e3e5
+Section: Packaging
+Priority: required
+Description: the advanced packaging library from Debian
+Name: APT (libapt-pkg)
+Tag: purpose::library, role::developer
 
-Package: apt7-lib
- Essential: yes
- Priority: required
- Section: Packaging
-Filename: debs/apt7-lib_1.7.2-sileo2_iphoneos-arm.deb
- Maintainer: CoolStar <coolstarorganization@gmail.com>
- Architecture: iphoneos-arm
- Version: 1.7.2-sileo2
- Pre-Depends: dpkg (>= 1.14.25-8)
- Depends: bzip2, dpkg (>= 1.14.25-9), gnupg, gzip, lzma, cy+cpu.arm64
- Replaces: apt (<< 1:0-1), apt7 (<< 0.7.20.2-3), apt7-ssl
- Breaks: apt7 (<< 0.7.25.3-7), aptitude (<< 0.4.11.11-6)
- Conflicts: apt7-ssl
- Provides: apt7-ssl
- Description: the advanced packaging library from Debian
- Name: APT 1.7 Strict (lib)
-MD5sum: 18fc9121240330b523c9e9e481931986
+Package: ldid
+Version: 2:2.1.2+g5420cb5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 464
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libplist (>= 2.0.0), libssl1.1.1, dpkg (>= 1.18.25-9)
+Filename: debs/ldid_2_2.1.2+g5420cb5-1_iphoneos-arm.deb
+Size: 51610
+MD5sum: 74302a4a9265923ba95f325dff9a702c
+SHA1: c8ac42dbcb07a81116428c1555a898fdddb6e7d6
+SHA256: 98ff2c568b6ee3522895a5b9ae2a627085029ab5428814f91a29aa02e0243824
+Section: Development
+Priority: optional
+Description: pseudo-codesign Mach-O files
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Name: Link Identity Editor
+Tag: purpose::console, role::developer
+
+
+Package: lzma
+Version: 2:4.32.7-3
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 736
+Conflicts: com.mc.xz
+Filename: debs/1443.00/lzma_2_4.32.7-3_iphoneos-arm.deb
+Size: 72304
+MD5sum: e37ee6db50bf3a33577f992a04fb1dc5
+SHA1: 364cf52a35cfdf83f934364992e951a43a15a6e6
+SHA256: 21ed98c924c25d970bbf380bb3b6300af072c150f8b2a9b98a6a2d7bc28c9ad9
+Section: Archiving
+Priority: important
+Homepage: http://tukaani.org/lzma/
+Description: slower, but better, compression algorithm
+Name: LZMA Utils
+Tag: purpose::console, role::hacker
